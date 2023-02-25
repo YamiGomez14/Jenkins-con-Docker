@@ -7,6 +7,6 @@ pipeline {
                 echo "Prueba 2"
             }
         }
-        stage(´´)
+    
     }
 }
