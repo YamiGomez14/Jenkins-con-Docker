@@ -1,4 +1,19 @@
-// #!/usr/bin/env groovy
+#!/usr/bin/env groovy
+pipeline {
+    agent any
+    stages {
+        stage('Stage 1'){
+            steps{
+                echo "hola mundo"
+            }
+        }
+    }
+}
+
+
+
+
+
 // pipeline {
 //    agent any 
 //    //{
@@ -28,14 +43,3 @@
 //     }
 // }
 
-#!/usr/bin/env groovy
-pipeline {
-    agent any
-    stages {
-        stage('Stage 1'){
-            steps{
-                echo "hola mundo"
-            }
-        }
-    }
-}
