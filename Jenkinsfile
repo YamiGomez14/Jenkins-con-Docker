@@ -4,15 +4,11 @@ pipeline {
     stages {
         stage('Stage 1'){
             steps{
-                echo "hola mundo"
+                echo "hola mundo prueba"
             }
         }
     }
 }
-
-
-
-
 
 // pipeline {
 //    agent any 
