@@ -1,33 +1,33 @@
-// #!/usr/bin/env groovy
-// pipeline {
-//     agent any
-//     stages {
-//         stage('Stage 1'){
-//             steps{
-//                 echo "hola mundo prueba"
-//             }
-//         }
-//     }
-// }
-
+#!/usr/bin/env groovy
 pipeline {
-   agent any 
-  
+    agent any
     stages {
         stage('Stage 1'){
             steps{
-                echo "Prueba 2"
+                echo "hola mundo prueba"
             }
         }
-        stage('Build and Deploy ') {
-            steps {
-                sh '''docker-compose up -d build'''
-            }
-        }
+    }
+}
+
+// pipeline {
+//    agent any 
+  
+//     stages {
+//         stage('Stage 1'){
+//             steps{
+//                 echo "Prueba 2"
+//             }
+//         }
+//         stage('Build and Deploy ') {
+//             steps {
+//                 sh '''docker-compose up -d build'''
+//             }
+//         }
 
         
         
     
-    }
-}
+//     }
+// }
 
